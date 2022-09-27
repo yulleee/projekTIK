@@ -24,7 +24,7 @@ from fp.views import prodi6
 from ft.views import prodi7
 from pascasarjana.views import prodi8
 from profil.views import profil
-
+from . import views
 
 
 urlpatterns = [
@@ -38,5 +38,6 @@ urlpatterns = [
     path('ft/', prodi7),
     path('pascasarjana/', prodi8),
     path('profil/', profil),
+    path('', views.index),
     
 ]
